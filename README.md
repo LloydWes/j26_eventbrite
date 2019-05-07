@@ -9,20 +9,25 @@ Pour cloner le projet :
 
 Pour être sûr de ne pas avoir de conflit avec une bdd existante :
 
+Pour supprimer une bdd qui porte le même nom
 
-`rails db:drop` Pour supprimer une bdd qui porte le même nom
+`rails db:drop` 
 
+Pour recréer une bdd
 
-`rails db:create` Pour recréer une bdd
+`rails db:create`
 
+Pour créer les tables
 
-`rails db:migrate` Pour créer les tables
+`rails db:migrate`
 
+Pour remplir les tables
 
-`rails db:seed` Pour remplir les tables
+`rails db:seed`
 
+Pour avoir accès à l'index
 
-`http://localhost:3000/` Pour avoir accès à l'index
+`http://localhost:3000/`
 
 
 
