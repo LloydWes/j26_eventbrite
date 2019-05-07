@@ -24,6 +24,10 @@ Pour remplir les tables
 
 `rails db:seed`
 
+Pour lancer le serveur
+
+`rails s`
+
 Pour avoir accès à l'index
 
 `http://localhost:3000/`
