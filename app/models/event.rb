@@ -1,7 +1,7 @@
 class CheckStartTime < ActiveModel::Validator
   def validate(record)
     if record.start_date != nil && record.start_date <= Time.now
-      record.errors.add(:start_date, "%{attribute} must be in the future")
+      record.errors.add(:start_date, "must be in the future")
     else
       true
     end
@@ -13,7 +13,7 @@ class CheckDuration < ActiveModel::Validator
     if record.duration % 5 == 0 && record.duration > 0
       true
     else
-      record.errors.add(:duration, "%{attribute} must be a multiple of 5 and greater than 0")
+      record.errors.add(:duration, "must be a multiple of 5 and greater than 0")
     end
   end
 end

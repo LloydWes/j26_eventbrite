@@ -18,7 +18,8 @@ puts "Creating users"
   User.create!(first_name: Faker::Name.first_name, 
               last_name: Faker::Name.last_name, 
               email: "lloydthp#{n}@yopmail.com", 
-              description: Faker::Lorem.paragraph
+              description: Faker::Lorem.paragraph(2),
+              password: 'thp_test'
               )
 end
 puts "done"
@@ -26,7 +27,7 @@ puts "Creating events"
 10.times do
   Event.create!(admin_id: User.all.sample.id, 
                 start_date: Faker::Date.between(Date.today, 2.months.from_now), 
-                duration: rand(30..150), title: Faker::Lorem.sentence, 
+                duration: rand(1..5)*5, title: Faker::Lorem.sentence, 
                 description: Faker::Lorem.paragraph, 
                 price: rand(10..200), 
                 location: Faker::Address.city
