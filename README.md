@@ -36,6 +36,9 @@ Pour avoir accès à l'index
 
 `http://localhost:3000/`
 
+Tout les `users` créé par le `seed` ont le **même mot de passe** "thp_test" (en minuscule)
+
+
 
 
 # README

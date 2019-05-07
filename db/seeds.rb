@@ -24,9 +24,9 @@ puts "Creating users"
 end
 puts "done"
 puts "Creating events"
-10.times do
+70.times do
   Event.create!(admin_id: User.all.sample.id, 
-                start_date: Faker::Date.between(Date.today, 2.months.from_now), 
+                start_date: Faker::Date.between(Date.today+10, 2.months.from_now), 
                 duration: rand(1..5)*5, title: Faker::Lorem.sentence, 
                 description: Faker::Lorem.paragraph, 
                 price: rand(10..200), 
@@ -47,7 +47,7 @@ puts "done"
 
 print "-"*10, "Displaying tables count", "-"*10,"\n"
 puts "Users.count : #{User.count}"
-puts "Users.count : #{Event.count}"
-puts "Users.count : #{Attendance.count}"
+puts "Event.count : #{Event.count}"
+puts "Attendance.count : #{Attendance.count}"
 
 print "-"*10, "Seed is done", "-"*10, "\n"

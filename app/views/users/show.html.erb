@@ -11,7 +11,18 @@
 		</div>
 	</div>
 
-	<% if user_signed_in? && @user.id == current_user.id %>
 	<%= link_to "Edit email / password", edit_user_registration_path, class: 'btn btn-warning' %>
+
+</div>
+
+<div class="container">
+	<p>Your events</p>
+	<% @user.events.each do |event| %>
+	<a href="<%= event_path(event.id) %>">
+	<div class="unique-envent mt-2 mb-2 border">
+		<p>Title : <%= event.title %></p>
+		<p>Location : <%= event.location %></p>
+		<p>Start date : <%= event.start_date %></p>
+	</div></a>
 	<% end %>
 </div>

@@ -1,8 +1,7 @@
-<% i = 1 %>
-<div class="flex-parent d-flex flex-wrap justify-content-around">
+<div class="flex-parent d-flex flex-wrap justify-content-around mt-3">
 	<% @all_events_array.each do |current_event| %>
-	<div class="card" style="width: 18rem;">
-		<div class="card-header flex-row justify-content-between">Gossip n°<%=current_event.id%></div>
+	<div class="card mb-3" style="width: 18rem;">
+		<div class="card-header flex-row justify-content-between">Event n°<%=current_event.id%></div>
 		<%=image_tag("https://static1.squarespace.com/static/5aadc54285ede1bd72181a3a/t/5aadccec0e2e725448d54c7c/1521339652089/shutterstock_538256848.jpg?format=1500w", class:"card-img-top img_fl", alt:"Card image cap")%>
 		<div class="card-body">
 			<h5 class="card-title text-muted">Posté par <a href="<%= user_path(current_event.user.id) %>"><%=current_event.user.first_name%> <%=current_event.user.last_name%></a></h5>
@@ -13,10 +12,5 @@
 		</div>
 		<div class="card-footer text-muted">Last update <%=current_event.updated_at.to_s.split(" ")[0...-1].join(" ") %></div>
 	</div>
-	<%puts "i=#{i}"%>
-	<% if i==5 %>
-	<% i = 1 %>
-	<% end %>
-	<% i += 1 %>
 	<% end %>
 </div>
