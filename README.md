@@ -4,6 +4,8 @@ Lien Heroku
 
 https://eventbritej26.herokuapp.com/
 
+N'oublie pas d'ajouter ton propre fichier `.env` pour pouvoir tester les mails.
+
 Pour cloner le projet :
 
 `git clone https://github.com/LloydWes/j26_eventbrite.git`
