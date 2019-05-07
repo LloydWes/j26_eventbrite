@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<h2>Create an event</h2>
+			<%= form_for @event, url: {action: "create"}, html: {class: "form-group"} do |f| %>
+			<div class="form_group">
+				<%= f.label :title, "Title" %>
+				<%= f.text_field :title , class: 'form-control'%>
+			</div>
+			<div class="form_group">
+				<%= f.label :start_date, "Date" %>
+				<%= f.date_field :start_date, class: 'form-control', min: Time.now.to_s.split.first %>
+			</div>
+			<div class="form_group">
+				<%= f.label :duration, "Duration" %>
+				<%= f.number_field :duration, class: 'form-control', step: 5, value: 5, min: 5 %>
+			</div>
+			<div class="form_group">
+				<%= f.label :price, "Price" %>
+				<%= f.number_field :price, class: 'form-control', min: 1, max: 1000 %>
+			</div>
+			<div class="form_group">
+				<%= f.label :location, "Location" %>
+				<%= f.text_field :location, class: 'form-control' %>
+			</div>
+			<div class="form_group">
+				<%= f.label :description, "Description" %>
+				<%= f.text_area :description, class: 'form-control', maxlength: 140, minlength: 5 %>
+			</div>
+
+
+			<div class="action text-center">
+				<%= f.submit "Envoyer !", class: 'btn btn-success' %>
+			</div>
+			<% end %>
+
+		</div>
+	</div>
+</div>
