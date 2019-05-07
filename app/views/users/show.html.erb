@@ -1,0 +1,17 @@
+<div class="container">
+	
+
+	<div class="">
+		<h4><%= @user.first_name %>'s profil !</h4>
+		<div class="maine-info">
+			<p>Name : <%= @user.first_name %> <%= @user.last_name %></p>
+			<p>Email : <%= @user.email %></p>
+			<p>Subscried on : <%= @user.created_at.to_s.split[0...-1].join(" ") %></p>
+			<p>Description : <%= @user.description %></p>
+		</div>
+	</div>
+
+	<% if user_signed_in? && @user.id == current_user.id %>
+	<%= link_to "Edit email / password", edit_user_registration_path, class: 'btn btn-warning' %>
+	<% end %>
+</div>

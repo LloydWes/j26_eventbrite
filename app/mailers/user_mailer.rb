@@ -13,6 +13,8 @@ class UserMailer < ApplicationMailer
 
   def inform_attendance(attend)
     puts "inform_attendance #{attend.user_id}  #{attend.user.email}"
+    # email_with_name = %(attend.user.first_name attend.user.email) 
+    # mail(to: email_with_name, subject: "Quelqu'un a rejoint votre événement" )
     mail(to: attend.user.email, subject: "Quelqu'un a rejoint votre événement" )
     # puts "/inform_attendance"
   end
