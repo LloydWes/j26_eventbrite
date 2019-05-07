@@ -1,15 +1,14 @@
 # EventBrite fait par Lloyd Westbury (@Lloyd sur Slack)
 
 Pour cloner le projet :
+
 `git clone https://github.com/LloydWes/j26_eventbrite.git`
 
+Pour être sûr d'avoir les gems que j'ai
 
-`bundle install` Pour être sûr d'avoir les gems que j'ai
-
+`bundle install`
 
 Pour être sûr de ne pas avoir de conflit avec une bdd existante :
-
-Pour supprimer une bdd qui porte le même nom
 
 `rails db:drop` 
 
