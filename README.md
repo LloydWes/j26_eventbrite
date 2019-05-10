@@ -49,6 +49,9 @@ Tout les `users` créé par le `seed` ont le **même mot de passe** "thp_test" (
     1. Ordered sub-list
 4. And another item.
 
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+
  You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
  To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
