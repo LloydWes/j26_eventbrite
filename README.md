@@ -40,7 +40,7 @@ Pour avoir accès à l'index
 
 Tout les `users` créé par le `seed` ont le **même mot de passe** "thp_test" (en minuscule)
 
-[![](https://www.w3schools.com/w3css/img_lights.jpg)]()
+![Alt](https://www.w3schools.com/w3css/img_lights.jpg "ok")
 
 1. First ordered list item
 2. Another item
