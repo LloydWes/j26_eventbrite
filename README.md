@@ -58,7 +58,11 @@ Tout les `users` créé par le `seed` ont le **même mot de passe** "thp_test" (
  Note that this line is separate, but within the same paragraph.⋅⋅
  (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
-
+Langage C
+```C
+int i = 2;
+int tab[2] = [1,2];
+```
 
 # README
 
